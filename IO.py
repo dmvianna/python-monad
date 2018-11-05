@@ -108,7 +108,7 @@ def execute_IO(IO_action, return_unit=False):
                 return IO_action.value
 
     elif IO_action.IOtype == IO.OutputT:
-        print IO_action.output
+        print (IO_action.output)
         return execute_IO(IO_action.followup)
 
     elif IO_action.IOtype == IO.InputT:
